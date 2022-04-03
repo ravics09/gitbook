@@ -2,7 +2,12 @@ import React, {useState, useEffect} from 'react';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {Home, Details} from './../screens';
+import {Home} from './../screens';
+import {
+  TutorialStack,
+  QAStack,
+  CommandStack
+} from './../navigation/stackNavigator';
 
 const Stack = createNativeStackNavigator();
 
@@ -10,7 +15,7 @@ const MainNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="Gitbook"
         screenOptions={{
           headerShown: true,
           headerStyle: {backgroundColor: 'white'},
@@ -19,14 +24,24 @@ const MainNavigator = () => {
           headerBackTitle: 'back',
         }}>
         <Stack.Screen
-          name="Home"
+          name="Gitbook"
           component={Home}
           options={{headerShown: true}}
         />
         <Stack.Screen
-          name="Details"
-          component={Details}
-          options={{headerShown: true}}
+          name="tutorials"
+          component={TutorialStack}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="commands"
+          component={CommandStack}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="qalist"
+          component={QAStack}
+          options={{headerShown: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>
