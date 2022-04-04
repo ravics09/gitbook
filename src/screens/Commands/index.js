@@ -1,13 +1,27 @@
 import React, {useState, useEffect, Fragment} from 'react';
-import {View, Text, Button} from 'react-native';
+import {View, Text, FlatList, TouchableOpacity} from 'react-native';
+import Styles from './styles';
+import CommandList from './../../utils/commands.json';
 
 const Commands = ({navigation}) => {
+  const ItemRender = ({item, navigation}) => (
+    <TouchableOpacity
+      style={Styles.itemContainer}
+      onPress={() => navigation.navigate('Command', {item: item})}>
+      <View>
+        <Text style={Styles.itemTitle}> {item.command} </Text>
+      </View>
+    </TouchableOpacity>
+  );
+
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Commands Page</Text>
-      <Button
-        title="Go to Specific topic"
-        onPress={() => navigation.navigate('Command')}
+    <View style={Styles.container}>
+      <Text>Most Useful Commands</Text>
+      <FlatList
+        data={CommandList.commands}
+        renderItem={({item}) => (
+          <ItemRender item={item} navigation={navigation} />
+        )}
       />
     </View>
   );

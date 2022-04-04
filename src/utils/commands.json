@@ -1,0 +1,29 @@
+{
+    "commands": [
+      {
+        "id": "1",
+        "command": "git clone",
+        "detail": ["This command is used for downloading the latest version of a remote project and copying it to the selected location on the local machine.\n"]
+      },
+      {
+        "id": "2",
+        "command": "git fetch",
+        "detail": ["This Git command will get all the updates from the remote repository, including new branches.\n"]
+      },
+      {
+        "id": "3",
+        "command": "git checkout",
+        "detail": ["You can use the checkout command to switch the branch that you are currently working on.\n","If you want to create a new branch and switch to it, you can do it by using this command.\n"]
+      },
+      {
+        "id": "4",
+        "command": "git init",
+        "detail": ["This is the command you need to use if you want to start a new empty repository or to reinitialize an existing one in the project root. It will create a .git directory with its subdirectories. It should look like this:\n"]
+      },
+      {
+        "id": "5",
+        "command": "git commit",
+        "detail": ["This one is probably the most used Git command. After changes are done locally, you can save them by “committing” them. A commit is like local a snapshot of the current state of the branch, to which you can always come back. To create a new commit, type this command in Git Bash:\n"]
+      }
+    ]
+  }
