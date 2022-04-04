@@ -107,7 +107,7 @@ const CommandStack = ({navigation}) => (
 
 const QAStack = ({navigation}) => (
   <Stack.Navigator
-    initialRouteName="QAList"
+    initialRouteName="Interview questions"
     screenOptions={{
       headerShown: true,
       headerStyle: {backgroundColor: 'white'},
@@ -116,7 +116,7 @@ const QAStack = ({navigation}) => (
       headerBackTitle: 'back',
     }}>
     <Stack.Screen
-      name="QAList"
+      name="Interview questions"
       component={QAList}
       options={() => ({
         headerLeft: () => (
@@ -141,7 +141,7 @@ const QAStack = ({navigation}) => (
               name="arrow-back"
               size={25}
               style={[{color: 'black'}]}
-              onPress={() => navigation.navigate('QAList')}
+              onPress={() => navigation.navigate('Interview questions')}
             />
           </TouchableOpacity>
         ),

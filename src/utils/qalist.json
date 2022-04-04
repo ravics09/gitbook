@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "What is Git ?",
+      "answer": ["Git is a Distributed Version Control system (DVCS).\n","It can track changes to a file and allows you to revert back to any particular change.\n","Its distributed architecture provides many advantages over other Version Control Systems (VCS) like SVN one major advantage is that it does not rely on a central server to store all the versions of a project’s files."]
+    },
+    {
+      "id": "2",
+      "question": "What is difference between Git vs SVN ?",
+      "answer": ["The main point in Git vs SVN debate boils down to this:\n", "Git is a distributed version control system (DVCS).\n","whereas SVN is a centralized version control system."]
+    },
+    {
+      "id": "3",
+      "question": "What is Git fork? What is difference between fork, branch and clone ?",
+      "answer": ["A fork is a remote, server-side copy of a repository, distinct from the original. A fork isn't a Git concept really, it's more a political/social idea.\n","A clone is not a fork; a clone is a local copy of some remote repository. When you clone, you are actually copying the entire source repository, including all the history and branches.\n","A branch is a mechanism to handle the changes within a single repository in order to eventually merge them with the rest of code.\n","A branch is something that is within a repository. Conceptually, it represents a thread of development."]
+    },
+    {
+      "id": "4",
+      "question": "What's the difference between a 'pull request' and a 'branch'?",
+      "answer": ["A branch is just a separate version of the code.\n","A pull request is when someone take the repository, makes their own branch, does some changes, then tries to merge that branch in (put their changes in the other person's code repository)."]
+    },
+    {
+      "id": "5",
+      "question": "How does the Centralized Workflow work?",
+      "answer": ["The Centralized Workflow uses a central repository to serve as the single point-of for all changes to the project.\n", "The default development branch is called master and all changes are committed into this branch.\n","Developers start by cloning the central repository. In their own local copies of the project, they edit files and commit changes. These new commits are stored locally.\n","To publish changes to the official project, developers push their local master branch to the central repository.\n","Before the developer can publish their feature, they need to fetch the updated central commits and rebase their changes on top of them.\n","Compared to other workflows, the Centralized Workflow has no defined pull request or forking patterns."]
+    }
+  ]
+}
