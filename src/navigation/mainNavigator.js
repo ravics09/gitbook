@@ -6,7 +6,7 @@ import {Home} from './../screens';
 import {
   TutorialStack,
   QAStack,
-  CommandStack
+  CommandStack,
 } from './../navigation/stackNavigator';
 
 const Stack = createNativeStackNavigator();
