@@ -6,11 +6,13 @@ const QATopic = ({route, navigation}) => {
   const {item} = route.params;
   return (
     <View style={Styles.container}>
-      <Text style={Styles.itemTitle}>{item.question}</Text>
+      <Text style={Styles.title}>{item.question}</Text>
       {item.answer.map((element, index) => (
-        <Text style={Styles.itemSubTitle} key={index}>
-          {element}
-        </Text>
+        <View style={Styles.itemContainer} key={(index*10)}>
+          <Text style={Styles.itemSubTitle}>
+            {element}
+          </Text>
+        </View>
       ))}
     </View>
   );

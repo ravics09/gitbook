@@ -18,9 +18,9 @@ const MainNavigator = () => {
         initialRouteName="Gitbook"
         screenOptions={{
           headerShown: true,
-          headerStyle: {backgroundColor: 'white'},
-          headerTintColor: 'black',
-          headerTitleStyle: {fontWeight: 'bold'},
+          headerStyle: {backgroundColor: '#163D5D'},
+          headerTintColor: 'White',
+          headerTitleStyle: {fontWeight: 'bold', color:"white"},
           headerBackTitle: 'back',
         }}>
         <Stack.Screen

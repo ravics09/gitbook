@@ -20,9 +20,9 @@ const TutorialStack = ({navigation}) => (
     initialRouteName="Tutorials"
     screenOptions={{
       headerShown: true,
-      headerStyle: {backgroundColor: 'white'},
+      headerStyle: {backgroundColor: '#163D5D'},
       headerTintColor: 'black',
-      headerTitleStyle: {fontWeight: 'bold'},
+      headerTitleStyle: {fontWeight: 'bold', color:"white"},
       headerBackTitle: 'back',
     }}>
     <Stack.Screen
@@ -34,7 +34,7 @@ const TutorialStack = ({navigation}) => (
             <Ionicons
               name="arrow-back"
               size={25}
-              style={[{color: 'black'}]}
+              style={[{color: 'white', paddingRight:5}]}
               onPress={() => navigation.navigate('Gitbook')}
             />
           </TouchableOpacity>
@@ -50,7 +50,7 @@ const TutorialStack = ({navigation}) => (
             <Ionicons
               name="arrow-back"
               size={25}
-              style={[{color: 'black'}]}
+              style={[{color: 'white', paddingRight:5}]}
               onPress={() => navigation.navigate('Tutorials')}
             />
           </TouchableOpacity>
@@ -65,9 +65,9 @@ const CommandStack = ({navigation}) => (
     initialRouteName="Commands"
     screenOptions={{
       headerShown: true,
-      headerStyle: {backgroundColor: 'white'},
+      headerStyle: {backgroundColor: '#163D5D'},
       headerTintColor: 'black',
-      headerTitleStyle: {fontWeight: 'bold'},
+      headerTitleStyle: {fontWeight: 'bold', color:"white"},
       headerBackTitle: 'back',
     }}>
     <Stack.Screen
@@ -79,7 +79,7 @@ const CommandStack = ({navigation}) => (
             <Ionicons
               name="arrow-back"
               size={25}
-              style={[{color: 'black'}]}
+              style={[{color: 'white', paddingRight:5}]}
               onPress={() => navigation.navigate('Gitbook')}
             />
           </TouchableOpacity>
@@ -95,7 +95,7 @@ const CommandStack = ({navigation}) => (
             <Ionicons
               name="arrow-back"
               size={25}
-              style={[{color: 'black'}]}
+              style={[{color: 'white', paddingRight:5}]}
               onPress={() => navigation.navigate('Commands')}
             />
           </TouchableOpacity>
@@ -110,9 +110,9 @@ const QAStack = ({navigation}) => (
     initialRouteName="Interview questions"
     screenOptions={{
       headerShown: true,
-      headerStyle: {backgroundColor: 'white'},
+      headerStyle: {backgroundColor: '#163D5D'},
       headerTintColor: 'black',
-      headerTitleStyle: {fontWeight: 'bold'},
+      headerTitleStyle: {fontWeight: 'bold', color:"white"},
       headerBackTitle: 'back',
     }}>
     <Stack.Screen
@@ -124,7 +124,7 @@ const QAStack = ({navigation}) => (
             <Ionicons
               name="arrow-back"
               size={25}
-              style={[{color: 'black'}]}
+              style={[{color: 'white', paddingRight:5}]}
               onPress={() => navigation.navigate('Gitbook')}
             />
           </TouchableOpacity>
@@ -140,7 +140,7 @@ const QAStack = ({navigation}) => (
             <Ionicons
               name="arrow-back"
               size={25}
-              style={[{color: 'black'}]}
+              style={[{color: 'white', paddingRight:5}]}
               onPress={() => navigation.navigate('Interview questions')}
             />
           </TouchableOpacity>

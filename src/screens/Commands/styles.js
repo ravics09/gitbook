@@ -10,12 +10,10 @@ const Styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   itemContainer: {
-    marginVertical: 5,
-    paddingVertical: 10,
+    marginVertical: 10,
   },
   itemTitle: {
     fontSize: 16,
-    paddingVertical: 5,
   },
   itemSubTitle: {
     fontSize: 12,

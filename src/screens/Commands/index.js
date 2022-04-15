@@ -16,7 +16,7 @@ const Commands = ({navigation}) => {
 
   return (
     <View style={Styles.container}>
-      <Text>Most Useful Commands</Text>
+      <Text style={Styles.title}>Most Useful Commands</Text>
       <FlatList
         data={CommandList.commands}
         renderItem={({item}) => (
